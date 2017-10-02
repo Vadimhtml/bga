@@ -1,9 +1,64 @@
+$Body__backgroundColor = #000000
+$Body__color_primary = #ffffff
+$Body__color_accented = #00cc00
+$Body__fontSize = 14px
+$Body__lineHeight = 25px
+$Body__color_accented = #00cc00
+$Footer__offsetBottom = 64px
+
 html,
 body
   border 0
   margin 0
   padding 0
+  width 100%
+  min-width @width
+  height @width
+  min-height @width
 
 body
-  background red
+  background-color $Body__backgroundColor
+  background-image url(logo.png)
+  background-position center center
+  background-repeat no-repeat
+  font-size $Body__fontSize
+  line-height $Body__lineHeight
+  color $Body__color_primary
+
+
+.Footer
+  text-align center
+  white-space nowrap
+  position absolute
+  bottom $Footer__offsetBottom
+  left 0
+  right 0
+
+  &__List
+    padding 0
+    margin 0
+    display block
+
+    &Item
+      display inline
+      padding 0
+      margin 0
+
+
+      & + &
+
+        &::before
+          content '\00a0\2022\00a0'
+          display inline
+          color $Body__color_accented
+
+  &__Mail
+    text-decoration none
+    color $Body__color_primary
+
+    &:hover
+      color $Body__color_accented
+
+  &__Brand
+    color $Body__color_accented
 
