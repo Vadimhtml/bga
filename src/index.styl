@@ -1,4 +1,4 @@
-$Viewport__minHeight = 800px
+$Viewport__minHeight = 600px
 $Body__backgroundColor = #000000
 $Body__color_primary = #ffffff
 $Body__color_accented = #00cc00
@@ -12,10 +12,7 @@ body
   border 0
   margin 0
   padding 0
-  width 100%
-  min-width @width
-  height @width
-  min-height $Viewport__minHeight
+  min-height 100%
 
 body
   background-color $Body__backgroundColor
@@ -28,6 +25,10 @@ body
   font-family 'Roboto Slab', serif
   font-weight 300
 
+.Content
+  position relative
+  height 100%
+  min-height $Viewport__minHeight
 
 .Footer
   text-align center
