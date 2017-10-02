@@ -2,7 +2,7 @@ var gulp = require('gulp'),
     gulpStylus = require('gulp-stylus'),
     gulpMyth = require('gulp-myth'),
     gulpPug = require('gulp-pug'),
-    buildPath = './build';
+    buildPath = './docs';
 
 function wrapPipe(taskFn) {
     return function (done) {
