@@ -9,14 +9,13 @@ html
         link(href="index.css", rel="stylesheet", type="text/css", media="screen")
         link(href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400&amp;subset=latin-ext", rel="stylesheet", type="text/css", media="screen")
     body
-        .Content
-            .Footer
-                ul.Footer__List
-                    each val, index in ['4237 Via Marina', 'Suite 406', 'Marina Del Rey', 'CA', '90292', '(213) 559-2569']
-                        li.Footer__ListItem= val
+        .Footer
+            ul.Footer__List
+                each val, index in ['4237 Via Marina', 'Suite 406', 'Marina Del Rey', 'CA', '90292', '(213) 559-2569']
+                    li.Footer__ListItem= val
 
-                a.Footer__Mail(href="mailto:" + email)= email
-                .Footer__Brand Big Green Alien Films
+            a.Footer__Mail(href="mailto:" + email)= email
+            .Footer__Brand Big Green Alien Films
 
 
 
